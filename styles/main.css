@@ -1,0 +1,138 @@
+* {box-sizing: border-box; }
+header {
+    text-align: center;
+}
+body {
+    margin:0;
+}
+h1 {
+    margin-left: 1rem;
+    font-family: sans-serif;
+}
+.main-nav .nav-button {
+    position: absolute;
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+    cursor:pointer;
+}
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    display: none;
+    list-style: none;
+    background-color: dimgrey;
+    font-family: sans-serif;
+}
+.main-nav ul.active {
+    display: block;
+}
+.main-nav a {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: white;
+}
+.main-nav a:hover, .main-nav a:focus {
+    background: #ccc;
+    color: black;
+}
+@media screen and (min-width: 800px) {
+    .main-nav .nav-button {
+        display:none;
+        padding: 0;
+    }
+    .main-nav ul, .main-nav ul.active {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width: 800px) {
+    .flex div {width:100%}
+}
+    /* Home image css start */
+ul {
+    display:flex;
+    flex-wrap:wrap;
+    list-style: none;
+    margin-left: -37px;
+    margin-right: 3px;
+}
+li {
+    height: 40vh;
+    flex-grow: 1;
+}
+li last-child {
+    flex-grow: 10;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+li img { 
+    max-height: 100%;
+    min-width: 100%;
+    object-fit:cover;
+    vertical-align: bottom;
+    padding: 3px;
+}
+    /* Home image css end */
+
+    /* Slideshow "content" css start */
+#slideshow {
+  margin: 10px auto;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding: 0px;
+}
+#slideshow img {
+    width: 100%;
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+    /* Slideshow "content" css end */
+
+    /*css for Contact Page*/
+form {
+    padding-left: 1em;
+    padding-right: 1rem;
+}
+form div {
+    padding-bottom: .25rem;
+}
+form div span.formText {
+    display: inline-block;
+    width: 100px;
+}
+form div textarea {
+    width: 100%;
+    height: 5rem;
+}
+.p1 {
+    padding-left: 1em;
+    padding-bottom: .5em;
+    font-weight: bold;
+}
+    /*end of css for Contact Page*/
+footer {
+    flex-shrink: 0;
+    height: 50px;
+    margin-top: 50px;
+}
+footer div {
+    text-align: center;
+    vertical-align: bottom;
+}
